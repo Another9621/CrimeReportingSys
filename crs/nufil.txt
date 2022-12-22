@@ -1,0 +1,7 @@
+srno	name	class
+01	megha	12
+02	madhu	12
+03	arjun	12
+04	palin	12
+05	megha	12
+06	priya	12

@@ -1,0 +1,12 @@
+python -m pip install -U pip
+python -m pip install -U matplotlib
+
+
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4])
+plt.ylabel('some numbers')
+plt.show()
+
+git clone https://github.com/matplotlib/matplotlib
+git clone https://github.com/jbmohler/matplotlib-winbuild
+python matplotlib-winbuild\buildall.py

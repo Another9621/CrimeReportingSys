@@ -1,0 +1,459 @@
+
+
+time of logging: 2020-01-04 14:37:14.874452
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+user id and pwd matched
+inside cur select function: show cases Button was clicked
+Query executed: select caseno from cases;
+cases in table:
+[3012073, 3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=31121965; 
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=3112195; 
+inside updating function: for updating cases status
+current case numbers in DB:
+[3012073, 3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+submit button pressed in update window
+case status:
+Case Closed
+<class 'str'>
+case no:
+3112195
+<class 'str'>
+For fetching old status from DB: query being executed::
+
+select case_status from cases where caseno='3112195';
+oldstatus:
+New Case
+query being executed::
+update cases set case_status='New Case--Case Closed' where caseno='3112195';
+End of update() function 
+
+time of logging: 2020-01-04 14:41:06.116700
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+user id and pwd matched
+inside cur select function: show cases Button was clicked
+Query executed: select caseno from cases;
+cases in table:
+[3012073, 3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+Inside show function: VIEW Button was clicked
+the selected case is
+3012073
+query executed
+select * from cases where caseno=3012073; 
+{'caseno': 3012073, 'c_name': 'Radha', 'c_phone': '9621231056', 'date_incident': datetime.date(2020, 1, 1), 'time_incident': datetime.timedelta(0, 3600), 'c_address': '259-d ,block-3,type-2', 'c_type': 'rash driving', 'descr': 'on new year ,near main bazaar some guys hit a cycle .It was clear that they were drunk.their vehicle number was-TN01-N-4756', 'case_status': 'New Case', 'suspect_name': 'NA', 'locality': 'Neyveli', 'state': 'TN', 'userid': 'Gayathri'}
+inside updating function: for updating cases status
+current case numbers in DB:
+[3012073, 3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+submit button pressed in update window
+case status:
+case closed due to lack of evidence
+<class 'str'>
+case no:
+3012073
+<class 'str'>
+For fetching old status from DB: query being executed::
+
+select case_status from cases where caseno='3012073';
+oldstatus:
+New Case
+query being executed::
+update cases set case_status='New Case--case closed due to lack of evidence' where caseno='3012073';
+End of update() function 
+inside Manage ids function: Manage Users Button was clicked
+connecting to DB to get existing user ids
+
+time of logging: 2020-01-04 14:42:32.217175
+CRS.py executed
+inside user function in user login module
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234'}
+connecting to DB to get existing user ids
+connecting to DB to get existing user ids
+user entered values: uid: 
+Sarfaraj
+pwd:
+123456
+
+Confirm pwd:
+.!frame.!entry3
+Passwords dont match
+user entered values: uid: 
+Anitha
+pwd:
+123456
+
+Confirm pwd:
+.!frame.!entry3
+user id already in dictionary
+user entered values: uid: 
+Sarfaraj
+pwd:
+123456
+
+Confirm pwd:
+.!frame.!entry3
+creating new user id
+connecting to DB to add new user
+QUERY TO BE EXECUTED:
+insert into users values('Sarfaraj','123456','user','new user');
+new user added to user table
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234', 'Sarfaraj': '123456'}
+inside cef function: Submit button was clicked for user login
+user id and pwd matched
+inside show_stat function: SHOW CASE STATUS Button was pressed
+query being executed::
+select caseno,case_status from cases where userid='Sarfaraj';
+result of query:
+
+[]
+new case number generated is:
+4012081
+<class 'int'>
+
+time of logging: 2020-01-04 14:44:45.875299
+CRS.py executed
+inside new win function
+inside first checkbox condition
+query being executed::
+select c_type,date_incident,descr from cases where locality='Neyveli' and state='TN';
+[('rash driving', datetime.date(2020, 1, 1), 'on new year ,near main bazaar some guys hit a cycle .It was clear that they were drunk.their vehicle number was-TN01-N-4756'), ('Stalking', datetime.date(2019, 11, 24), 'Sister was followed by some guys while returning home'), ('Stalking', datetime.date(2019, 11, 11), 'When i was going to school, some guys came and teased me'), ('Theft', datetime.date(2019, 9, 11), 'Wallet was stolen'), ('Chain Snatching', datetime.date(2019, 12, 20), 'two rodies in a bike tried to snathc my chain when i was going to the market')]
+entered insert_ data function in class TABLE for creating table
+data displayed in guest user table
+[('rash driving', datetime.date(2020, 1, 1), 'on new year ,near main bazaar some guys hit a cycle .It was clear that they were drunk.their vehicle number was-TN01-N-4756'), ('Stalking', datetime.date(2019, 11, 24), 'Sister was followed by some guys while returning home'), ('Stalking', datetime.date(2019, 11, 11), 'When i was going to school, some guys came and teased me'), ('Theft', datetime.date(2019, 9, 11), 'Wallet was stolen'), ('Chain Snatching', datetime.date(2019, 12, 20), 'two rodies in a bike tried to snathc my chain when i was going to the market')]
+inside new win function
+inside second checkbox condition
+locality:
+[('Neyveli',), ('Vridachalam',)]
+query executed is:
+select c_type, count(c_type) from cases where locality='Neyveli' group by c_type order by count(c_type)  desc;
+[('Stalking', 2), ('rash driving', 1), ('Theft', 1), ('Chain Snatching', 1)]
+rec:
+('Stalking', 2)
+Most prevalent crime in Neyveli is Stalking--- 2  cases
+query executed is:
+select c_type, count(c_type) from cases where locality='Vridachalam' group by c_type order by count(c_type)  desc;
+[('theft', 3), ('Chain Snatching', 1)]
+rec:
+('theft', 3)
+Most prevalent crime in Vridachalam is theft--- 3  cases
+inside new win function
+insert chart
+[(2, 'Chain Snatching'), (1, 'rash driving'), (2, 'Stalking'), (4, 'theft')]
+['Chain Snatching', 'rash driving', 'Stalking', 'theft']
+[2, 1, 2, 4]
+
+time of logging: 2020-01-04 14:48:07.728593
+CRS.py executed
+
+time of logging: 2020-01-04 15:36:53.411524
+CRS.py executed
+
+time of logging: 2020-01-04 15:38:02.532591
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+user id and pwd matched
+inside cur select function: show cases Button was clicked
+Query executed: select caseno from cases;
+cases in table:
+[3012073, 3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+Inside show function: VIEW Button was clicked
+the selected case is
+3012073
+query executed
+select * from cases where caseno=3012073; 
+{'caseno': 3012073, 'c_name': 'Radha', 'c_phone': '9621231056', 'date_incident': datetime.date(2020, 1, 1), 'time_incident': datetime.timedelta(0, 3600), 'c_address': '259-d ,block-3,type-2', 'c_type': 'rash driving', 'descr': 'on new year ,near main bazaar some guys hit a cycle .It was clear that they were drunk.their vehicle number was-TN01-N-4756', 'case_status': 'New Case--case closed due to lack of evidence', 'suspect_name': 'NA', 'locality': 'Neyveli', 'state': 'TN', 'userid': 'Gayathri'}
+inside updating function: for updating cases status
+current case numbers in DB:
+[3012073, 3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+submit button pressed in update window
+case status:
+Case closed
+<class 'str'>
+case no:
+3012073
+<class 'str'>
+For fetching old status from DB: query being executed::
+
+select case_status from cases where caseno='3012073';
+oldstatus:
+New Case--case closed due to lack of evidence
+query being executed::
+update cases set case_status='New Case--case closed due to lack of evidence--Case closed' where caseno='3012073';
+End of update() function 
+inside Manage ids function: Manage Users Button was clicked
+
+time of logging: 2020-01-04 15:54:48.307127
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+within cef function: submit button for admin login was pressed
+
+time of logging: 2020-01-04 15:56:54.995117
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+
+time of logging: 2020-01-04 15:57:37.788170
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+
+time of logging: 2020-01-04 15:59:13.016287
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+within cef function: submit button for admin login was pressed
+within cef function: submit button for admin login was pressed
+
+time of logging: 2020-01-04 16:01:58.286288
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+within cef function: submit button for admin login was pressed
+
+time of logging: 2020-01-04 16:13:02.915697
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+user id and pwd matched
+inside cur select function: show cases Button was clicked
+Query executed: select caseno from cases;
+cases in table:
+[3012073, 3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+inside updating function: for updating cases status
+current case numbers in DB:
+[3012073, 3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+Inside show function: VIEW Button was clicked
+the selected case is
+3012073
+query executed
+select * from cases where caseno=3012073; 
+{'caseno': 3012073, 'c_name': 'Radha', 'c_phone': '9621231056', 'date_incident': datetime.date(2020, 1, 1), 'time_incident': datetime.timedelta(0, 3600), 'c_address': '259-d ,block-3,type-2', 'c_type': 'rash driving', 'descr': 'on new year ,near main bazaar some guys hit a cycle .It was clear that they were drunk.their vehicle number was-TN01-N-4756', 'case_status': 'New Case--case closed due to lack of evidence--Case closed', 'suspect_name': 'NA', 'locality': 'Neyveli', 'state': 'TN', 'userid': 'Gayathri'}
+submit button pressed in update window
+case status:
+Case losed
+<class 'str'>
+case no:
+3012073
+<class 'str'>
+For fetching old status from DB: query being executed::
+
+select case_status from cases where caseno='3012073';
+oldstatus:
+New Case--case closed due to lack of evidence--Case closed
+query being executed::
+update cases set case_status='New Case--case closed due to lack of evidence--Case closed--Case losed' where caseno='3012073';
+inside Manage ids function: Manage Users Button was clicked
+connecting to DB to get existing user ids
+connecting to DB to get existing user ids
+user entered values: uid: 
+Megha
+pwd:
+123
+
+Confirm pwd:
+.!frame.!entry3
+creating new user id
+connecting to DB to add new user
+QUERY TO BE EXECUTED:
+insert into users values('Megha','123','user','new user');
+new user added to user table
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234', 'Sarfaraj': '123456', 'Megha': '123'}
+
+time of logging: 2020-01-04 16:27:51.015671
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+user id and pwd matched
+inside Manage ids function: Manage Users Button was clicked
+connecting to DB to get existing user ids
+user entered values: uid: 
+Megha
+pwd:
+123
+
+Confirm pwd:
+.!frame.!entry3
+user id already in dictionary
+user entered values: uid: 
+Megha
+pwd:
+133
+
+Confirm pwd:
+.!frame.!entry3
+user id already in dictionary
+user entered values: uid: 
+Arun
+pwd:
+133
+
+Confirm pwd:
+.!frame.!entry3
+Passwords dont match
+connecting to DB to get existing user ids
+user entered values: uid: 
+Arun
+pwd:
+123
+
+Confirm pwd:
+.!frame.!entry3
+Passwords dont match
+connecting to DB to get existing user ids
+connecting to DB to get existing user ids
+user entered values: uid: 
+Arun
+pwd:
+123
+
+Confirm pwd:
+.!frame.!entry3
+creating new user id
+connecting to DB to add new user
+QUERY TO BE EXECUTED:
+insert into users values('Arun','123','user','new user');
+new user added to user table
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234', 'Sarfaraj': '123456', 'Megha': '123', 'Arun': '123'}
+inside delete user function
+user entered values: uid: 
+Arun
+List of current Users:
+dict_keys(['Anitha', 'Badrinath', 'Gayathri', 'Monisha', 'test', 'test2', 'Sarfaraj', 'Megha', 'Arun'])
+user id is present in dictionary
+connecting to DB to delete user
+QUERY TO BE EXECUTED:
+delete from users where uid='Arun' and UType='user';
+User ID deleted from user table
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234', 'Sarfaraj': '123456', 'Megha': '123'}
+inside delete user function
+user entered values: uid: 
+Arun
+List of current Users:
+dict_keys(['Anitha', 'Badrinath', 'Gayathri', 'Monisha', 'test', 'test2', 'Sarfaraj', 'Megha'])
+inside delete user function
+user entered values: uid: 
+Arun
+List of current Users:
+dict_keys(['Anitha', 'Badrinath', 'Gayathri', 'Monisha', 'test', 'test2', 'Sarfaraj', 'Megha'])
+user entered values: uid: 
+Anjum
+pwd:
+1234
+
+Confirm pwd:
+.!frame.!entry3
+user id already in dictionary
+user entered values: uid: 
+Admin
+pwd:
+1234
+
+Confirm pwd:
+.!frame.!entry3
+Passwords dont match
+user entered values: uid: 
+Admin
+pwd:
+1234
+
+Confirm pwd:
+.!frame.!entry3
+creating new admin id
+connecting to DB to add new admin
+QUERY TO BE EXECUTED:
+insert into users values('Admin','1234','admin','new admin');
+new user added to user table
+list of current admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+user entered values: uid: 
+admin
+user entered values: uid: 
+Admin
+user entered values: uid: 
+Sivanesh
+admin id is present in dictionary
+connecting to DB to delete admin
+QUERY TO BE EXECUTED:
+delete from users where uid='Sivanesh' and UType='admin';
+Admin user deleted from user table
+list of current admin ids :
+{'Anjum': '161084', 'Megha': '12345'}
+user entered values: uid: 
+Monish
+pwd:
+1234
+
+Confirm pwd:
+1234
+user id Does not Exist in dictionary
+user entered values: uid: 
+Monisha
+pwd:
+1234
+
+Confirm pwd:
+1234
+Changing Password for given user id
+connecting to DB to change password 
+QUERY TO BE EXECUTED:
+update users set pwd='1234' , log='password changed by admin' where uid='Monisha' and UType='user';
+Password changed in user table
+list of current ids :
+{'Anjum': '161084', 'Megha': '12345'}
+
+
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '1234', 'test': '123', 'test2': '234', 'Sarfaraj': '123456', 'Megha': '123', 'Admin': '1234'}

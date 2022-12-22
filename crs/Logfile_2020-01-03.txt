@@ -1,0 +1,159 @@
+
+
+time of logging: 2020-01-03 14:17:55.656493
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+
+time of logging: 2020-01-03 14:19:21.340228
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+user id and pwd matched
+inside cur select function: show cases Button was clicked
+Query executed: select caseno from cases;
+cases in table:
+[3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=caseno; 
+
+time of logging: 2020-01-03 14:21:18.069724
+CRS.py executed
+inside user function in user login module
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234'}
+inside cef function: Submit button was clicked for user login
+
+time of logging: 2020-01-03 14:25:45.864446
+CRS.py executed
+inside user function in user login module
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234'}
+inside cef function: Submit button was clicked for user login
+user id and pwd matched
+
+time of logging: 2020-01-03 14:26:58.696371
+CRS.py executed
+inside user function in user login module
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234'}
+inside cef function: Submit button was clicked for user login
+user id and pwd matched
+inside show_stat function: SHOW CASE STATUS Button was pressed
+query being executed::
+select caseno,case_status from cases where userid='Badrinath';
+result of query:
+
+[(31121915, 'New Case')]
+
+time of logging: 2020-01-03 14:29:25.619857
+CRS.py executed
+
+time of logging: 2020-01-03 14:34:00.819034
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+user id and pwd matched
+inside cur select function: show cases Button was clicked
+Query executed: select caseno from cases;
+cases in table:
+[3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=31121921; 
+inside Manage ids function: Manage Users Button was clicked
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=31121923; 
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=31121923; 
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=31121914; 
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=31121965; 
+
+time of logging: 2020-01-03 14:36:29.428192
+CRS.py executed
+admin user selected.
+Calling Admin module
+inside admin function
+list of current Admin ids :
+{'Anjum': '161084', 'Megha': '12345', 'Sivanesh': '98765'}
+within cef function: submit button for admin login was pressed
+user id and pwd matched
+inside cur select function: show cases Button was clicked
+Query executed: select caseno from cases;
+cases in table:
+[3112195, 31121914, 31121915, 31121921, 31121923, 31121941, 31121965, 31121993]
+Inside show function: VIEW Button was clicked
+query executed
+select * from cases where caseno=31121914; 
+
+time of logging: 2020-01-03 14:37:09.782704
+CRS.py executed
+inside user function in user login module
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234'}
+inside cef function: Submit button was clicked for user login
+user id and pwd matched
+inside show_stat function: SHOW CASE STATUS Button was pressed
+query being executed::
+select caseno,case_status from cases where userid='Anitha';
+result of query:
+
+[(3112195, 'New Case'), (31121993, 'New Case--Closed')]
+
+time of logging: 2020-01-03 14:38:38.826298
+CRS.py executed
+inside new win function
+inside first checkbox condition
+query being executed::
+select c_type,date_incident,descr from cases where locality='Neyveli' and state='TN';
+[('Stalking', datetime.date(2019, 11, 24), 'Sister was followed by some guys while returning home'), ('Stalking', datetime.date(2019, 11, 11), 'When i was going to school, some guys came and teased me'), ('Theft', datetime.date(2019, 9, 11), 'Wallet was stolen'), ('Chain Snatching', datetime.date(2019, 12, 20), 'two rodies in a bike tried to snathc my chain when i was going to the market')]
+entered insert_ data function in class megha for creatign table
+query being executed::
+select c_type,date_incident,descr from cases where locality='Neyveli' and state='TN';
+[('Stalking', datetime.date(2019, 11, 24), 'Sister was followed by some guys while returning home'), ('Stalking', datetime.date(2019, 11, 11), 'When i was going to school, some guys came and teased me'), ('Theft', datetime.date(2019, 9, 11), 'Wallet was stolen'), ('Chain Snatching', datetime.date(2019, 12, 20), 'two rodies in a bike tried to snathc my chain when i was going to the market')]
+entered insert_ data function in class megha for creatign table
+inside new win function
+locality:
+[('Neyveli',), ('Vridachalam',)]
+query executed is:
+select c_type, count(c_type) from cases where locality='Neyveli' group by c_type order by count(c_type)  desc;
+[('Stalking', 2), ('Theft', 1), ('Chain Snatching', 1)]
+rec:
+('Stalking', 2)
+Most prevalent crime in Neyveli is Stalking--- 2  cases
+query executed is:
+select c_type, count(c_type) from cases where locality='Vridachalam' group by c_type order by count(c_type)  desc;
+[('theft', 3), ('Chain Snatching', 1)]
+rec:
+('theft', 3)
+Most prevalent crime in Vridachalam is theft--- 3  cases
+inside new win function
+insert chart
+[(2, 'Chain Snatching'), (2, 'Stalking'), (4, 'theft')]
+['Chain Snatching', 'Stalking', 'theft']
+[2, 2, 4]
+
+time of logging: 2020-01-03 14:40:19.452432
+CRS.py executed
+inside user function in user login module
+list of current user ids :
+{'Anitha': '9876', 'Badrinath': '021069', 'Gayathri': '251219', 'Monisha': '110802', 'test': '123', 'test2': '234'}
+inside cef function: Submit button was clicked for user login
+user id and pwd matched
