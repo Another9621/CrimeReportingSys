@@ -48,7 +48,7 @@ def guest_user(root):
    
     l.pack(pady=50)
     #logo display code
-    img1=Image.open('crslogo_tile.jpg')
+    img1=Image.open('crslogo.jpg')
     Img=ImageTk.PhotoImage(img1)
     w=img1.width
     h=img1.height
