@@ -121,7 +121,7 @@ def admin(root):
         master.title("CRS:Crime Reporting System -Admin Login")
         master.geometry("250x250")
         #code to display project logo
-        img1=Image.open('crslogo_tile.jpg')
+        img1=Image.open('crslogo.jpg')
         Img=ImageTk.PhotoImage(img1)
         w=img1.width
         h=img1.height
